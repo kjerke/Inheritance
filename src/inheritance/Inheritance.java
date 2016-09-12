@@ -19,7 +19,7 @@ public class Inheritance {
         //a.setSodaType("Coke");
         a.setNutritionalType("Diet");
         
-        //System.out.println(a.getDrinkType());
+        
         a.getDrinkDetails();
     }
 }
