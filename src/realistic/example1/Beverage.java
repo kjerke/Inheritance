@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package inheritance;
+package realistic.example1;
 
 import javax.swing.JOptionPane;
 
@@ -18,11 +18,11 @@ public class Beverage {
         drinkType = drink;
     }
     
-    public String getDrinkType(){
+    public final String getDrinkType(){
         return drinkType;
     }
     
-    public void getDrinkDetails(){
+    public final void getDrinkDetails(){
         JOptionPane.showMessageDialog(null, "Drink type: " + getDrinkType());
     }
 }
