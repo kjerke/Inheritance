@@ -9,6 +9,13 @@ package realistic.example2;
  *
  * @author kevinjerke
  */
-public class Beverage {
+public abstract class Beverage {
     
+    String drinkType;
+    
+     public void setDrinkType(String drink);
+           
+    public abstract String getDrinkType();
+      
+  
 }

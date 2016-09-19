@@ -9,6 +9,24 @@ package realistic.example2;
  *
  * @author kevinjerke
  */
-public class CocaCola {
-    
+public abstract class CocaCola extends SoftDrink {
+     String nutritionType;
+     String sodaType;
+     
+     @Override
+     public String getNutritionType(){
+         return nutritionType;
+     }
+     @Override
+     public void setNutritionType(){
+         this.nutritionType = nutritionType;
+     }
+     @Override
+       public String getSodaType(){
+         return nutritionType;
+     }
+     @Override
+     public void setSodaType(){
+         this.sodaType = sodaType;
+     }
 }
