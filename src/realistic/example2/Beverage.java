@@ -5,17 +5,26 @@
  */
 package realistic.example2;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author kevinjerke
  */
-public abstract class Beverage {
+public class Beverage {
     
     String drinkType;
     
-     public void setDrinkType(String drink);
-           
-    public abstract String getDrinkType();
+    public void setDrinkType(String drink){
+        drinkType = drink;
+    }
+    
+    public String getDrinkType(){
+        return drinkType;
+    }
+    
+    public void getDrinkDetails(){
+        JOptionPane.showMessageDialog(null, "Drink type: " + getDrinkType());
       
-  
+    }
 }

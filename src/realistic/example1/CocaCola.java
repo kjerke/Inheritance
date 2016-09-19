@@ -15,7 +15,7 @@ public class CocaCola extends SoftDrink {
     String nutritionType;
     String sodaType;
     
-    public String getNutritionalInfo(){
+    public final String getNutritionalInfo(){
         return nutritionType;
     }
             

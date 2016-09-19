@@ -5,10 +5,54 @@
  */
 package realistic.example2;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author kevinjerke
  */
-public class SoftDrink {
+public abstract class SoftDrink extends Beverage {
+    String flavorType;
+    String sodaType;
+    String drinkType;
+    
+    public void setFlavor(String flavor){
+        flavorType = flavor;
+    }
+    
+    public String getFlavor(){
+        return flavorType;
+    }
+    
+    public void setSodaType(String soda){
+        sodaType = soda;
+    }
+    
+    public String getSodaType(){
+        return sodaType;
+    }
+    
+    @Override
+    public void setDrinkType(String drink){
+        drinkType = drink;
+    }
+    
+    public void setDrinkType(){
+        drinkType = "Soda";
+    }
+    
+ 
+    @Override
+    public String getDrinkType(){
+        return drinkType;
+    }
+    
+    /**
+     *
+     */
+    @Override
+    public void getDrinkDetails(){
+        JOptionPane.showMessageDialog(null, "Drink type: " + getDrinkType() + " flavor: " + getFlavor() + " soda: " + getSodaType());
+    }
     
 }

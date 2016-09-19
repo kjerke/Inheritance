@@ -10,5 +10,16 @@ package realistic.example2;
  * @author kevinjerke
  */
 public class Start {
-    
+    public static void main(String []args){
+    CocaCola c = new CocaCola() {};
+        
+        //a.setDrinkType("soda");
+        c.setDrinkType();
+        c.setFlavor("Cherry");
+        //a.setSodaType("Coke");
+        c.setNutritionalType("Diet");
+        
+        
+        c.getDrinkDetails();
+    }
 }

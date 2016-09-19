@@ -18,11 +18,11 @@ public class Beverage {
         drinkType = drink;
     }
     
-    public final String getDrinkType(){
+    public String getDrinkType(){
         return drinkType;
     }
     
-    public final void getDrinkDetails(){
+    public void getDrinkDetails(){
         JOptionPane.showMessageDialog(null, "Drink type: " + getDrinkType());
     }
 }
