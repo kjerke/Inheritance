@@ -13,13 +13,10 @@ public class Inheritance {
     public static void main(String []args){
         CocaCola a = new CocaCola();
         
-        //a.setDrinkType("soda");
+       
         a.setDrinkType();
         a.setFlavor("Cherry");
-        //a.setSodaType("Coke");
         a.setNutritionalType("Diet");
-        
-        
         a.getDrinkDetails();
     }
 }

@@ -12,13 +12,14 @@ package realistic.example2;
 public class CocaCola extends SoftDrink {
      String nutritionType;
      String sodaType;
+     String nutritionalType;
      
      
      public String getNutritionType(){
          return nutritionType;
      }
      
-     public void setNutritionType(){
+     public void setNutritionType(String nutritionalType){
          this.nutritionType = nutritionType;
      }
      
@@ -30,6 +31,5 @@ public class CocaCola extends SoftDrink {
      public final void setSodaType(){
          this.sodaType = sodaType;
      }
-     
-     
 }
+
