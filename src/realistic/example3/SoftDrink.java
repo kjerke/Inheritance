@@ -4,12 +4,12 @@
  * and open the template in the editor.
  */
 package realistic.example3;
-
+import javax.swing.JOptionPane;
 /**
  *
  * @author kevinjerke
  */
-public class SoftDrink {
+public abstract class SoftDrink implements Beverage {
     String flavorType;
     String sodaType;
     String drinkType;
@@ -48,6 +48,4 @@ public class SoftDrink {
     public void getDrinkDetails(){
         JOptionPane.showMessageDialog(null, "Drink type: " + getDrinkType() + " flavor: " + getFlavor() + " soda: " + getSodaType());
     }
-}
-
 }

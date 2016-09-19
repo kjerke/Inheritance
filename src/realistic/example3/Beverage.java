@@ -5,10 +5,19 @@
  */
 package realistic.example3;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author kevinjerke
  */
-public class Beverage {
+public interface Beverage {
+   
     
+    public void setDrinkType(String drink);
+    
+    public String getDrinkType();
+
+    public void getDrinkDetails();
+
 }
